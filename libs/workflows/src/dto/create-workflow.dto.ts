@@ -1,10 +1,13 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class Building {
+export class CreateWorkflowDto {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
   name: string;
+
+  @Column()
+  buildingId: number;
 }
